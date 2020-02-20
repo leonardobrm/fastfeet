@@ -1,4 +1,4 @@
- ![]('src/logo.png')
+ ![](src/logo.png)
 # description
 > Está é uma API desenvolvida em Node.JS para  uma transportadora.
 
