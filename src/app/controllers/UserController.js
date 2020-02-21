@@ -16,6 +16,20 @@ class UserController {
       email,
     });
   }
+
+  async destroy(req, res) {
+    const { id } = req.params;
+
+    const user = await User.findByPk(id);
+
+    if (!user) {
+      return res.status(400).json({ error: 'User not found' });
+    }
+
+    await user.destroy();
+
+    return res.send();
+  }
 }
 
 export default new UserController();
