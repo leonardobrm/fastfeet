@@ -35,6 +35,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      ssn: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        unique: true,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
